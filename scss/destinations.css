@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Verdana;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+.page-header {
+  background-color: #ffffff;
+  color: black;
+  padding: 0.625rem;
+}
+.page-header__wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.page-header__title {
+  color: #335576;
+}
+
+.primary-nav {
+  display: flex;
+}
+.primary-nav li {
+  list-style-type: none;
+}
+.primary-nav__link {
+  color: #ffffff;
+  color: black;
+  padding: 0.625rem;
+  text-decoration: none;
+  list-style-type: none;
+}
+.primary-nav__link--highlight {
+  -webkit-text-decoration: 2px underline #db7a4e;
+          text-decoration: 2px underline #db7a4e;
+}
+
+.page-footer {
+  background-color: #fefaf5;
+  padding: 0.625rem;
+}
+.page-footer__wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+.page-footer__title {
+  color: #335576;
+}
+
+.heading {
+  color: #db7a4e;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 10px;
+}
+
+.business-hours-info {
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 10px;
+}
+
+.footer-image {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-icon {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 10px;
+  width: auto;
+  height: 40px;
+}/*# sourceMappingURL=destinations.css.map */

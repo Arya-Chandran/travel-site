@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Verdana;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+$primary-color: #ffffff;
+$secondary-color: #fefaf5;
+$wordmark-color: #335576;
+$active-color: #db7a4e;
+$default-color: black;
+
+.page-header {
+  background-color: $primary-color;
+  color: $default-color;
+  padding: 0.625rem;
+
+  &__wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    color: $wordmark-color;
+  }
+}
+
+.primary-nav {
+  display: flex;
+  & li {
+    list-style-type: none;
+  }
+  &__link {
+    color: $primary-color;
+    color: $default-color;
+    padding: 0.625rem;
+    text-decoration: none;
+    list-style-type: none;
+    &--highlight {
+      text-decoration: 2px underline $active-color;
+    }
+  }
+}
+
+.page-footer {
+  background-color: $secondary-color;
+  padding: 0.625rem;
+  &__wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+  }
+  &__title {
+    color: $wordmark-color;
+  }
+}
+
+.heading {
+  color: $active-color;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 10px;
+}
+
+.business-hours-info {
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 10px;
+}
+
+.footer-image {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-icon {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 10px;
+  width: auto;
+  height: 40px;
+}
