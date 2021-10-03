@@ -9,57 +9,60 @@ $default-color: black;
 .container {
   background-color: $secondary-color;
   padding: 0.625rem;
- }
+  padding-left: 80px;
 
   &__wrapper {
-  max-width: 1280px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
- }
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
 
   &__left {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
- }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
 
   &__title {
-  color: $wordmark-color;
-  font-size: 35px;
- } 
+    color: $wordmark-color;
+    font-size: 35px;
+  }
 
   &__description {
-  word-spacing: -2px;
-  color: $wordmark-color;
- }
-
+    word-spacing: -2px;
+    color: $wordmark-color;
+  }
 
   &__left,
   &__right {
-  width: 50%;
- }
+    width: 50%;
+  }
 
   &__img {
-  max-width: 100%;
-  padding: 3.125rem;
-  //   margin-left:50px;
- }
+    max-width: 100%;
+    padding-top: 8.125rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 60px;
+  
+  }
 }
 
 .btn {
-    background: $active-color;
-    color: $primary-color;
-    padding: 0.625rem 2.5rem;
-    border-radius: 500px;
-    text-decoration: none;
-    margin-top: 20px;
-  }
+  background: $active-color;
+  color: $primary-color;
+  padding: 0.625rem 2.5rem;
+  border-radius: 500px;
+  text-decoration: none;
+  margin-top: 20px;
+}
 
 .destinations-container {
   background-color: $primary-color;
   padding: 0.625rem;
+  padding-left: 80px;
   &__title {
     color: $wordmark-color;
   }
@@ -86,5 +89,8 @@ $default-color: black;
   }
   &__img {
     max-width: 100%;
+  }
+  :hover {
+    border:1px solid $wordmark-color;
   }
 }

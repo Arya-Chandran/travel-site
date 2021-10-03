@@ -7,7 +7,7 @@ body {
   font-family: Verdana;
   margin: 0;
   padding: 0;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 $primary-color: #ffffff;
@@ -19,10 +19,13 @@ $default-color: black;
 .page-header {
   background-color: $primary-color;
   color: $default-color;
-  padding: 0.625rem;
-
+  padding: 0.625rem 5rem;
+  position: fixed;
+  top:0;
+  width:100%; 
+  z-index:10;
   &__wrapper {
-    max-width: 1280px;
+    max-width:1280px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -32,33 +35,43 @@ $default-color: black;
   &__title {
     color: $wordmark-color;
   }
+
+  &--link{
+    text-decoration: none;
+    }
 }
 
 .primary-nav {
   display: flex;
   & li {
     list-style-type: none;
+    &:hover {
+      text-decoration: 0.125rem underline; 
+    }
   }
   &__link {
-    color: $primary-color;
     color: $default-color;
     padding: 0.625rem;
     text-decoration: none;
     list-style-type: none;
     &--highlight {
-      text-decoration: 2px underline $active-color;
+      text-decoration: 0.125rem underline $active-color;
+
     }
   }
 }
 
 .page-footer {
   background-color: $secondary-color;
-  padding: 0.625rem;
+  padding-top: 0.625rem;
+  padding-left: 5rem;
+  padding-bottom: 20px;
   &__wrapper {
     max-width: 1280px;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
+  
   }
   &__title {
     color: $wordmark-color;
@@ -75,7 +88,7 @@ $default-color: black;
 .business-hours-info {
   display: inline-block;
   vertical-align: top;
-  padding-right: 10px;
+  padding-right: 0.625rem;
 }
 
 .footer-image {
@@ -84,10 +97,9 @@ $default-color: black;
 }
 
 .image-icon {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 0px;
-  padding-right: 10px;
+  padding:10px 10px 10px 0;
+  // padding: 0.625rem 0.625rem 0.625rem 0;
   width: auto;
-  height: 40px;
+  height: 2.5rem;
+
 }
