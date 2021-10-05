@@ -1,20 +1,13 @@
-@use "./partials/global";
+@use "./partials/global" as *;
 
-$primary-color: #ffffff;
-$secondary-color: #fefaf5;
-$wordmark-color: #335576;
-$active-color: #db7a4e;
-$default-color: black;
 
 .landing-header {
-  padding:50px;
-  padding-left:80px;
+  padding-left:5rem;
   min-height: 50.938rem;
-  max-height: 50.938rem;
+  max-height: 70.938rem;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
   
   &--destination-one{
     background-image: url(../assets/images/hawaii.jpg);
@@ -28,7 +21,8 @@ $default-color: black;
 
   &__title {
     color: $primary-color;
-    font-size: 60px;
+    font-size: 5rem;
+    padding-top:5rem;
   }
 
   &__wrapper {
@@ -37,10 +31,11 @@ $default-color: black;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    padding-top:2.5rem;
   }
 
   &__card {
-    padding-bottom: 30px;
+    padding-bottom: 1.875rem;
     min-width: 16.625rem;
     max-width: 21.875rem;
     min-height: 22.5rem;
@@ -51,14 +46,14 @@ $default-color: black;
   }
   &__activity-day {
     color: $default-color;
-    border-bottom: 3px solid $default-color;
-    margin: 20px;
+    border-bottom: 0.188rem solid $default-color;
+    margin: 1.25rem;
   }
   &__activity-lists {
     padding: 0;
     & li {
-      margin: 20px;
-      padding: 16px 0;
+      margin: 1.25rem;
+      padding: 1rem 0;
       background-color: $secondary-color;
       list-style-type: none;
     }

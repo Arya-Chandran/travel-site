@@ -7,7 +7,7 @@ body {
   font-family: Verdana;
   margin: 0;
   padding: 0;
-  font-size: 0.875rem;
+  font-size:0.875rem;
 }
 
 $primary-color: #ffffff;
@@ -19,13 +19,13 @@ $default-color: black;
 .page-header {
   background-color: $primary-color;
   color: $default-color;
-  padding: 0.625rem 5rem;
+  padding: 0 5rem;
   position: fixed;
-  top:0;
-  width:100%; 
-  z-index:10;
+  top: 0;
+  width: 100%;
+  z-index: 10;
   &__wrapper {
-    max-width:1280px;
+    max-width: 1280px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -36,17 +36,17 @@ $default-color: black;
     color: $wordmark-color;
   }
 
-  &--link{
+  &--link {
     text-decoration: none;
-    }
+  }
 }
 
 .primary-nav {
   display: flex;
   & li {
     list-style-type: none;
-    &:hover {
-      text-decoration: 0.125rem underline; 
+       &:hover {
+      text-decoration: 0.225rem underline;
     }
   }
   &__link {
@@ -55,8 +55,7 @@ $default-color: black;
     text-decoration: none;
     list-style-type: none;
     &--highlight {
-      text-decoration: 0.125rem underline $active-color;
-
+      text-decoration: 0.225rem underline $active-color;
     }
   }
 }
@@ -65,30 +64,34 @@ $default-color: black;
   background-color: $secondary-color;
   padding-top: 0.625rem;
   padding-left: 5rem;
-  padding-bottom: 20px;
+  padding-bottom: 1.25rem;
   &__wrapper {
     max-width: 1280px;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
-  
   }
   &__title {
     color: $wordmark-color;
+    font-weight:600;
   }
 }
 
-.heading {
+.footer-subtitle {
   color: $active-color;
   text-transform: uppercase;
   margin: 0;
-  font-size: 10px;
+  font-size: 0.625rem;
+}
+.footer-content{
+  color:$wordmark-color;
+  font-weight: 400;
 }
 
 .business-hours-info {
   display: inline-block;
   vertical-align: top;
-  padding-right: 0.625rem;
+  padding-right: 0.825rem;
 }
 
 .footer-image {
@@ -97,9 +100,8 @@ $default-color: black;
 }
 
 .image-icon {
-  padding:10px 10px 10px 0;
-  // padding: 0.625rem 0.625rem 0.625rem 0;
+  padding: 0.625rem 0.625rem 0.625rem 0;
   width: auto;
   height: 2.5rem;
-
+  margin-right:1.25rem;;
 }
